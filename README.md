@@ -9,10 +9,10 @@ The main reason is to start getting hands-on experience with Javascripts DOM Man
 <h3>Branching Note:</h3>
 <ul>
 <li>git branch                      // see current branches. </li>
-<li>git branch <branch_name>        // create a develop branch named branch_name. </li>
-<li>git checkout <branch_name>      // change to <branch_name>. </li>
-<li>git merge <branch_name>         // take all commited changes in <branch_name> and add to branch you are currently on. </li>
-<li>git branch -d <branch_name>     // deletes <branch_name> if merged. </li>
-<li>git branch -D <branch_name>     // delete branch if not merged.</li>
-<li>git push origin <branch_name>   // push branch</li>
+<li>git branch branch_name          // create a develop branch named branch_name. </li>
+<li>git checkout branch_name        // change to branch_name. </li>
+<li>git merge branch_name           // take all commited changes in branch_name and add to branch you are currently on. </li>
+<li>git branch -d branch_name       // deletes branch_name if merged. </li>
+<li>git branch -D branch_name       // delete branch if not merged.</li>
+<li>git push origin branch_name     // push branch</li>
 </ul>
