@@ -6,7 +6,7 @@ This is an assignment given in The Odin Project (TOP>Foundations>Rock Paper Scis
 <h3>Note:</h3>
 The main reason is to start getting hands-on experience with Javascripts DOM Manipulation, functions and Events as well as to learn branching(create a develop branch, merge with the main, delete develop branch) in Git.
 
-<h3>Branching Note:</h3>
+<h2>Branching Note:</h2>
 <ul>
 <li>git branch                      // see current branches. </li>
 <li>git branch branch_name          // create a develop branch named branch_name. </li>
@@ -14,5 +14,5 @@ The main reason is to start getting hands-on experience with Javascripts DOM Man
 <li>git merge branch_name           // take all commited changes in branch_name and add to branch you are currently on. </li>
 <li>git branch -d branch_name       // deletes branch_name if merged. </li>
 <li>git branch -D branch_name       // delete branch if not merged.</li>
-<li>git push origin branch_name     // push branch</li>
+<li>git push origin branch_name     // push branch(main)</li>
 </ul>

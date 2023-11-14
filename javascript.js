@@ -3,14 +3,10 @@ let computerSelection;
 let playerSelection;
 let computerScore = 0;
 let playerScore = 0;
-
-
 function getComputerChoice() {   //return computerSelection as string of rock/paper/scissor
    let selectionArray = ['rock', 'paper', 'scissor'];
    return selectionArray[Math.floor(Math.random() * 3)];
 }
-
-
 function playRound(playerSelection, computerSelection) {   // return none, increment round, increment winners score
    if (playerSelection == computerSelection) {
       ++round;
@@ -28,8 +24,6 @@ function playRound(playerSelection, computerSelection) {   // return none, incre
       ++computerScore;
    }
 }
-
-
 const playerNode = document.querySelector('.player');
 const playerP = document.querySelector('.playerP');
 const computerNode =document.querySelector('.computer');
@@ -40,19 +34,17 @@ function updateScoreContainer(){       // finding ratio depending on the current
    computerNode.setAttribute('style',`flex-grow:${(computerScore+0.005)/(computerScore + playerScore + 0.01)} ;`);
    computerP.innerHTML=`--${computerScore} COMPUTER`;
 }
-
 const container = document.querySelector('#button-container');
 const body=document.querySelector('body');
 const pSelection=document.createElement('p');
-pSelection.setAttribute('style','color: white; text-align: center; font-size:22px;');
+pSelection.setAttribute('style','color: black; text-align: center; font-size:26px;');
 body.appendChild(pSelection);
 const pScore =document.createElement('p');
-pScore.setAttribute('style','color: white; text-align: center; font-size:22px;');
+pScore.setAttribute('style','color: black; text-align: center; font-size:26px;');
 body.appendChild(pScore);
 const pResult=document.createElement('p');
-pResult.setAttribute('style','color: white; text-align: center; font-size:26px;');
+pResult.setAttribute('style','color: black; text-align: center; font-size:26px;');
 body.appendChild(pResult);
-
 
 container.addEventListener('click', (event)=>{
    playerSelection=`${event.target.textContent}`;
@@ -74,56 +66,3 @@ container.addEventListener('click', (event)=>{
       }
    }
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-const one = document.getElementById('one');
-const two = document.getElementById('two');
-
-
-for (let i = 0; i <= 4; i++) {
-   playerSelection = prompt("type rock/paper/scissor");
-
-   computerSelection = getComputerChoice();
-
-   playRound(playerSelection, computerSelection);
-
-   console.log(`PlayervsComputer(${playerSelection}-${computerSelection}) @round${round}: computer:${computerScore} user:${playerScore}`);
-  
-  
-   if (round == 5) {
-      if (playerScore >> computerScore) {
-         console.log(`You Win`);
-         one.innerHTML = `You Win`;
-         two.innerHTML = `You vs Computer: You-${playerScore} / Computer:${computerScore}`;
-      }
-      else if (playerScore == computerScore) {
-         console.log(`It's a draw`);
-         one.innerHTML = `It's a draw`;
-         two.innerHTML = `You vs Computer: You-${playerScore} / Computer:${computerScore}`;
-      }
-      else {
-         console.log(`You Lose`);
-         one.innerHTML = `You Lose`;
-         two.innerHTML = `You vs Computer: You-${playerScore} / Computer:${computerScore}`;
-      }
-   }
-}
-*/
-
