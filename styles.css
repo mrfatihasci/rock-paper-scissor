@@ -1,3 +1,56 @@
-#one, #two{
+*, :before, :after{
+    box-sizing: border-box;    
+}
+
+body{
+    margin:0;
+    background-color:black
+}
+
+h1{
     text-align: center;
+    color: blue;
+}
+
+#button-container{
+    margin-top:100px;
+    margin-bottom: 100px;
+    width: 100%;
+    height: 80px;
+    display: grid;   
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap:10px;
+}
+
+.button.one{
+    grid-column-start: 2;
+}
+.button:hover{
+    background-color: blue;
+    color:black;
+}
+
+#score-container{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;   
+    font-size: 22px;
+}
+
+.computer{
+    background-color: red;
+    text-align: left;
+    flex-grow: 50;   
+    color: yellow;
+}
+.player{
+    background-color: blue;
+    text-align: right;
+    flex-grow: 50;  
+    color:aqua;
+
 }
