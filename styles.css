@@ -10,6 +10,17 @@ body{
 h1{
     text-align: center;
     color: red;
+
+}
+
+.light-icon{
+    display: flex;
+    justify-content: center;
+    
+}
+
+ion-icon{
+    font-size: 35px;
 }
 
 #button-container{

@@ -66,3 +66,26 @@ container.addEventListener('click', (event)=>{
       }
    }
 });
+
+const light=document.querySelector('.light-icon');
+let theme = true;
+function setThemeColor(){
+   if(theme){
+      body.setAttribute('style','color: white; background-color:black;');
+      pSelection.setAttribute('style','color: white; background-color:black; text-align: center; font-size:26px;');
+      pScore.setAttribute('style','color: white; background-color:black; text-align: center; font-size:26px;');
+      pResult.setAttribute('style','color: white; background-color:black; text-align: center; font-size:26px;');
+
+   }
+   else{
+      body.setAttribute('style','color: initial; background-color:bisque;');
+      pSelection.setAttribute('style','color: initial; background-color:bisque; text-align: center; font-size:26px;');
+      pScore.setAttribute('style','color: initial; background-color:bisque; text-align: center; font-size:26px;');
+      pResult.setAttribute('style','color: initial; background-color:bisque; text-align: center; font-size:26px;');
+   }
+}
+//add an event to turn on-off the lights  
+light.addEventListener('click', (event)=>{
+   theme=!theme;
+   setThemeColor();
+});
